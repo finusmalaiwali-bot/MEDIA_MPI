@@ -261,7 +261,7 @@ html, body {
 }
 
 /* ============================================
-   SLIDE 0 - WELCOME (FOTO AI KELAS)
+   SLIDE 0 - WELCOME (FOTO AI SBC)
 ============================================ */
 .welcome-wrapper {
     display: flex;
@@ -378,12 +378,15 @@ html, body {
     margin-bottom: 16px;
 }
 
+/* ===== SUBTITLE 14PT ===== */
 .welcome-subtitle {
-    font-size: 0.9rem;
+    font-size: 14pt;
+    font-weight: 700;
     color: var(--text-light);
     line-height: 1.7;
     margin-bottom: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .welcome-tags {
@@ -998,6 +1001,7 @@ html, body {
     .modal-title { font-size: 1.1rem; }
 
     .welcome-title-line1, .welcome-title-line2 { font-size: 1.1rem; }
+    .welcome-subtitle { font-size: 14pt; letter-spacing: 1px; }
 
     .closing-title { font-size: 14pt; letter-spacing: 4px; }
     .closing-subtitle { font-size: 14pt; letter-spacing: 2px; }
@@ -1030,6 +1034,7 @@ html, body {
     .dot.active { width: 12px; }
 
     .welcome-title-line1, .welcome-title-line2 { font-size: 0.9rem; }
+    .welcome-subtitle { font-size: 14pt; letter-spacing: 1px; }
     .modal-title { font-size: 1rem; }
     .modal-body { font-size: 0.8rem; }
 
