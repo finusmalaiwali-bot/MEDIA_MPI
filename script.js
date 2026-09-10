@@ -582,7 +582,7 @@ document.addEventListener('touchend', function(e) {
 document.querySelectorAll('.slide')[0].classList.add('active');
 progressBar.style.width = (1 / totalSlides * 100) + '%';
 
-console.log('📚 Slide SBC & Mikrokontroler - Pak Finus Mena 🐷');
+console.log('📚 Slide SBC & Mikrokontroler - Pak Finus Mena');
 console.log('👆 KLIK kartu untuk melihat detail & contoh nyata');
 console.log('⬅️➡️ Gunakan panah kiri/kanan untuk navigasi');
 console.log('🏠 Home di tengah bawah');
