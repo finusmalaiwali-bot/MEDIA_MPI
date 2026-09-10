@@ -31,9 +31,6 @@ html, body {
     user-select: none;
 }
 
-/* ============================================
-   SLIDE CONTAINER
-============================================ */
 .slide-container {
     width: 100vw;
     height: 100vh;
@@ -49,9 +46,6 @@ html, body {
     will-change: transform;
 }
 
-/* ============================================
-   SLIDE INDIVIDUAL
-============================================ */
 .slide {
     min-width: 100%;
     height: 100%;
@@ -85,9 +79,6 @@ html, body {
 
 .slide>* { position: relative; z-index: 1; }
 
-/* ============================================
-   SLIDE NUMBER
-============================================ */
 .slide-number {
     position: absolute;
     top: 16px;
@@ -100,9 +91,6 @@ html, body {
     z-index: 5;
 }
 
-/* ============================================
-   SLIDE TAG
-============================================ */
 .slide-tag {
     display: inline-block;
     background: var(--glass);
@@ -118,9 +106,6 @@ html, body {
     align-self: flex-start;
 }
 
-/* ============================================
-   TYPOGRAPHY
-============================================ */
 .slide-title {
     font-size: 2.2rem;
     font-weight: 800;
@@ -139,9 +124,6 @@ html, body {
     font-weight: 400;
 }
 
-/* ============================================
-   PROGRESS BAR
-============================================ */
 .progress-bar {
     position: fixed;
     top: 0;
@@ -154,9 +136,6 @@ html, body {
     box-shadow: 0 0 15px rgba(108, 99, 255, 0.3);
 }
 
-/* ============================================
-   INDICATOR DOTS
-============================================ */
 .slide-indicator {
     position: fixed;
     bottom: 18px;
@@ -192,9 +171,6 @@ html, body {
 }
 .dot:hover { opacity: 0.8; }
 
-/* ============================================
-   NAVIGASI PANAH
-============================================ */
 .nav-arrow {
     position: fixed;
     top: 50%;
@@ -228,9 +204,6 @@ html, body {
 .nav-arrow.prev { left: 16px; }
 .nav-arrow.next { right: 16px; }
 
-/* ============================================
-   TOMBOL HOME
-============================================ */
 .home-btn {
     position: fixed;
     bottom: 70px;
@@ -261,7 +234,7 @@ html, body {
 }
 
 /* ============================================
-   SLIDE 0 - WELCOME (FOTO AI SBC)
+   SLIDE 0 - WELCOME
 ============================================ */
 .welcome-wrapper {
     display: flex;
@@ -378,7 +351,6 @@ html, body {
     margin-bottom: 16px;
 }
 
-/* ===== SUBTITLE 14PT ===== */
 .welcome-subtitle {
     font-size: 14pt;
     font-weight: 700;
@@ -410,16 +382,13 @@ html, body {
 .welcome-tags span i { color: var(--primary); }
 
 /* ============================================
-   GRID SYSTEMS
+   GRID
 ============================================ */
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
 
-/* ============================================
-   CARDS
-============================================ */
 .card {
     background: var(--glass);
     border: 1px solid var(--glass-border);
@@ -465,9 +434,6 @@ html, body {
 .badge-gold { background: rgba(255, 193, 7, 0.12); color: #FFD54F; }
 .badge-green { background: rgba(76, 175, 80, 0.12); color: #81C784; }
 
-/* ============================================
-   CLICKABLE CARD
-============================================ */
 .clickable-card {
     cursor: pointer;
     position: relative;
@@ -506,9 +472,6 @@ html, body {
     50% { transform: translateY(-3px); }
 }
 
-/* ============================================
-   LIST COMPACT
-============================================ */
 .list-compact {
     list-style: none;
     display: flex;
@@ -531,9 +494,6 @@ html, body {
     width: 16px;
 }
 
-/* ============================================
-   VS COMPARISON
-============================================ */
 .vs-compact {
     display: flex;
     align-items: stretch;
@@ -608,9 +568,6 @@ html, body {
 }
 .vs-analogi span i { font-size: 1.2rem; }
 
-/* ============================================
-   PROYEK
-============================================ */
 .proyek-card .level {
     display: inline-block;
     padding: 1px 10px;
@@ -625,7 +582,7 @@ html, body {
 .level-advanced { background: rgba(255, 101, 132, 0.12); color: var(--secondary); }
 
 /* ============================================
-   MODAL DETAIL
+   MODAL
 ============================================ */
 .modal-overlay {
     position: fixed;
@@ -778,7 +735,7 @@ html, body {
 }
 
 /* ============================================
-   SLIDE PENUTUP (TERIMA KASIH)
+   PENUTUP
 ============================================ */
 .closing-wrapper {
     display: flex;
