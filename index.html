@@ -13,371 +13,419 @@
     <!-- ========== PROGRESS BAR ========== -->
     <div class="progress-bar" id="progressBar"></div>
 
+    <!-- ========== MODAL DETAIL ========== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box" id="modalBox">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon"><i class="fas fa-info-circle"></i></div>
+                <h3 class="modal-title" id="modalTitle">JUDUL</h3>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+            <div class="modal-footer">
+                <button class="modal-btn-close" id="modalBtnClose">
+                    <i class="fas fa-check"></i> MENGERTI
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- ========== SLIDE CONTAINER ========== -->
     <div class="slide-container">
         <div class="slide-wrapper" id="slideWrapper">
 
             <!-- ============================================================
-            SLIDE 0 - PROFIL GURU
+            SLIDE 0 - HALAMAN PEMBUKA / WELCOME
             ============================================================ -->
             <div class="slide slide-0 active" data-index="0">
                 <span class="slide-number">00 / 09</span>
+                <div class="welcome-wrapper">
+                    <div class="welcome-illustration">
+                        <div class="welcome-img-container">
+                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=600&fit=crop" 
+                                 alt="Suasana Kelas XII Tecmatik Plus" 
+                                 class="welcome-img"
+                                 onerror="this.style.display='none'; this.parentElement.classList.add('no-image');">
+                            <div class="img-fallback">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>KELAS XII TECMATIK PLUS</span>
+                            </div>
+                        </div>
+                        <div class="welcome-badge">
+                            <i class="fas fa-star"></i> INFORMATIKA
+                        </div>
+                    </div>
+                    <div class="welcome-content">
+                        <div class="welcome-greeting">HALLO, SELAMAT DATANG DI</div>
+                        <h1 class="welcome-title">KELAS XII TECMATIK PLUS INFORMATIKA</h1>
+                        <div class="welcome-line"></div>
+                        <p class="welcome-subtitle">
+                            MARI BELAJAR TENTANG SBC &amp; MIKROKONTROLER BERSAMA PAK FINUS MENA 🐷
+                        </p>
+                        <div class="welcome-tags">
+                            <span><i class="fas fa-microchip"></i> SBC</span>
+                            <span><i class="fas fa-memory"></i> MIKROKONTROLER</span>
+                            <span><i class="fas fa-wifi"></i> IOT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome-hint">
+                    <i class="fas fa-arrow-right"></i> KLIK PANAH DI SISI KIRI/KANAN UNTUK MEMULAI
+                </div>
+            </div>
+
+            <!-- ============================================================
+            SLIDE 1 - PROFIL GURU
+            ============================================================ -->
+            <div class="slide slide-1" data-index="1">
+                <span class="slide-number">01 / 09</span>
                 <div class="profile-wrapper">
                     <div class="profile-avatar">
                         <div class="ring-glow"></div>
-                        
+                        🐷
                     </div>
                     <div class="profile-info">
-                        <div class="greeting"><i class="fas fa-hand-wave"></i> Halo, Selamat Datang di</div>
-                        <h1>KELAS XII TECMATIK PLUS</h1>
-                        <div class="title-role"> Informatika</div>
+                        <div class="greeting"><i class="fas fa-hand-wave"></i> HALLO, SELAMAT DATANG!</div>
+                        <h1>FINUS MENA</h1>
+                        <div class="title-role">PENGAJAR INFORMATIKA &amp; TEKNOLOGI</div>
                         <p class="bio">
-                            <strong>Single Board Computer (SBC)/Mikrokontroler  </strong> —
-                        
+                            <strong>MENGAJAR DENGAN PASSION</strong> — MEMBIMBING SISWA MEMAHAMI
+                            DUNIA TEKNOLOGI DENGAN PENDEKATAN INTERAKTIF &amp; MENYENANGKAN.
+                        </p>
                         <div class="profile-tags">
-                            <span><i class="fas fa-microchip"></i> SBC &amp; IoT</span>
-                            <span><i class="fas fa-code"></i> Python &amp; C++</span>
-                            <span><i class="fas fa-robot"></i> Robotics</span>
-                            <span><i class="fas fa-graduation-cap"></i> 10+ Tahun</span>
+                            <span><i class="fas fa-microchip"></i> SBC &amp; IOT</span>
+                            <span><i class="fas fa-code"></i> PYTHON &amp; C++</span>
+                            <span><i class="fas fa-robot"></i> ROBOTICS</span>
+                            <span><i class="fas fa-graduation-cap"></i> 10+ TAHUN</span>
                         </div>
                     </div>
                 </div>
                 <div class="slide-subtitle">
-                    <i class="fas fa-arrow-right"></i> 
+                    <i class="fas fa-arrow-right"></i> GUNAKAN PANAH DI SISI KIRI/KANAN UNTUK NAVIGASI
                 </div>
             </div>
 
             <!-- ============================================================
-            SLIDE 1 - TUJUAN PEMBELAJARAN
-            ============================================================ -->
-            <div class="slide slide-1" data-index="1">
-                <span class="slide-number">01 / 09</span>
-                <span class="slide-tag">Tujuan</span>
-                <h2 class="slide-title">Tujuan Pembelajaran</h2>
-                <p class="slide-subtitle">Capaian yang akan kamu raih</p>
-                <div class="grid-3">
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-brain"></i></div>
-                        <h4>Memahami Konsep</h4>
-                        <p>Menjelaskan perbedaan SBC &amp; Mikrokontroler</p>
-                        <span class="badge badge-purple">C3</span>
-                    </div>
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-code"></i></div>
-                        <h4>Merancang Program</h4>
-                        <p>Membuat program sederhana (LED Blink)</p>
-                        <span class="badge badge-cyan">C4</span>
-                    </div>
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-microchip"></i></div>
-                        <h4>Implementasi</h4>
-                        <p>Membaca sensor &amp; menampilkan data</p>
-                        <span class="badge badge-pink">C5</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ============================================================
-            SLIDE 2 - MIKROKONTROLER
+            SLIDE 2 - TUJUAN PEMBELAJARAN
             ============================================================ -->
             <div class="slide slide-2" data-index="2">
                 <span class="slide-number">02 / 09</span>
-                <span class="slide-tag">Konsep Dasar</span>
-                <h2 class="slide-title">Apa itu Mikrokontroler?</h2>
-                <p class="slide-subtitle">Single Board Controller — kontrol spesifik</p>
+                <span class="slide-tag">TUJUAN</span>
+                <h2 class="slide-title">TUJUAN PEMBELAJARAN</h2>
+                <p class="slide-subtitle">CAPAIAN YANG AKAN KAMU RAIH</p>
+                <div class="grid-3">
+                    <div class="card clickable-card" data-detail="tujuan-konsep">
+                        <div class="icon"><i class="fas fa-brain"></i></div>
+                        <h4>MEMAHAMI KONSEP</h4>
+                        <p>MENJELASKAN PERBEDAAN SBC &amp; MIKROKONTROLER</p>
+                        <span class="badge badge-purple">C3</span>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK UNTUK DETAIL</div>
+                    </div>
+                    <div class="card clickable-card" data-detail="tujuan-program">
+                        <div class="icon"><i class="fas fa-code"></i></div>
+                        <h4>MERANCANG PROGRAM</h4>
+                        <p>MEMBUAT PROGRAM SEDERHANA (LED BLINK)</p>
+                        <span class="badge badge-cyan">C4</span>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK UNTUK DETAIL</div>
+                    </div>
+                    <div class="card clickable-card" data-detail="tujuan-implementasi">
+                        <div class="icon"><i class="fas fa-microchip"></i></div>
+                        <h4>IMPLEMENTASI</h4>
+                        <p>MEMBACA SENSOR &amp; MENAMPILKAN DATA</p>
+                        <span class="badge badge-pink">C5</span>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK UNTUK DETAIL</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================================
+            SLIDE 3 - MIKROKONTROLER
+            ============================================================ -->
+            <div class="slide slide-3" data-index="3">
+                <span class="slide-number">03 / 09</span>
+                <span class="slide-tag">KONSEP DASAR</span>
+                <h2 class="slide-title">APA ITU MIKROKONTROLER?</h2>
+                <p class="slide-subtitle">SINGLE BOARD CONTROLLER — KONTROL SPESIFIK</p>
                 <div class="grid-2">
                     <div>
-                        <div class="card" style="margin-bottom:10px;">
+                        <div class="card clickable-card" style="margin-bottom:10px;" data-detail="mcu-definisi">
                             <p style="color:var(--text-light);font-size:0.9rem;line-height:1.6;">
-                                <strong style="color:#fff;">Mikrokontroler</strong> adalah chip
-                                yang dirancang untuk tugas kontrol tertanam (embedded).
+                                <strong style="color:#fff;">MIKROKONTROLER</strong> ADALAH CHIP
+                                YANG DIRANCANG UNTUK TUGAS KONTROL TERTANAM (EMBEDDED).
                             </p>
+                            <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK UNTUK PENJELASAN LENGKAP</div>
                         </div>
-                        <div class="card">
+                        <div class="card clickable-card" data-detail="mcu-ciri">
                             <h4 style="font-size:0.85rem;margin-bottom:4px;">
-                                <i class="fas fa-list-check" style="color:var(--accent);margin-right:6px;"></i> Ciri-ciri
+                                <i class="fas fa-list-check" style="color:var(--accent);margin-right:6px;"></i> CIRI-CIRI
                             </h4>
                             <ul class="list-compact">
-                                <li><i class="fas fa-check-circle"></i> Sederhana &amp; spesifik</li>
-                                <li><i class="fas fa-check-circle"></i> Tanpa OS (bare-metal)</li>
-                                <li><i class="fas fa-check-circle"></i> Hemat daya</li>
-                                <li><i class="fas fa-check-circle"></i> Real-time</li>
+                                <li><i class="fas fa-check-circle"></i> SEDERHANA &amp; SPESIFIK</li>
+                                <li><i class="fas fa-check-circle"></i> TANPA OS (BARE-METAL)</li>
+                                <li><i class="fas fa-check-circle"></i> HEMAT DAYA</li>
+                                <li><i class="fas fa-check-circle"></i> REAL-TIME</li>
                             </ul>
+                            <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK UNTUK DETAIL</div>
                         </div>
                     </div>
-                    <div class="card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+                    <div class="card clickable-card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;" data-detail="mcu-contoh">
                         <i class="fas fa-microchip" style="font-size:3rem;color:var(--primary);margin-bottom:8px;"></i>
-                        <h4>Contoh Populer</h4>
+                        <h4>CONTOH</h4>
                         <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:4px;">
-                            <span class="badge badge-purple" style="font-size:0.7rem;padding:4px 14px;">Arduino UNO</span>
+                            <span class="badge badge-purple" style="font-size:0.7rem;padding:4px 14px;">ARDUINO UNO</span>
                             <span class="badge badge-gold" style="font-size:0.7rem;padding:4px 14px;">ESP32</span>
                             <span class="badge badge-cyan" style="font-size:0.7rem;padding:4px 14px;">STM32</span>
                         </div>
                         <p style="color:var(--text-light);font-size:0.7rem;margin-top:6px;">
-                            <i class="fas fa-wifi"></i> ESP32 WiFi + Bluetooth
+                            <i class="fas fa-wifi"></i> ESP32 WIFI + BLUETOOTH
                         </p>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK UNTUK CONTOH NYATA</div>
                     </div>
                 </div>
             </div>
 
             <!-- ============================================================
-            SLIDE 3 - SBC
-            ============================================================ -->
-            <div class="slide slide-3" data-index="3">
-                <span class="slide-number">03 / 09</span>
-                <span class="slide-tag">Konsep Dasar</span>
-                <h2 class="slide-title">Apa itu SBC?</h2>
-                <p class="slide-subtitle">Single Board Computer — komputer mini</p>
-                <div class="grid-2">
-                    <div>
-                        <div class="card" style="margin-bottom:10px;">
-                            <p style="color:var(--text-light);font-size:0.9rem;line-height:1.6;">
-                                <strong style="color:#fff;">SBC</strong> adalah komputer lengkap
-                                dalam satu papan sirkuit tunggal.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <h4 style="font-size:0.85rem;margin-bottom:4px;">
-                                <i class="fas fa-list-check" style="color:var(--accent);margin-right:6px;"></i> Ciri-ciri
-                            </h4>
-                            <ul class="list-compact">
-                                <li><i class="fas fa-check-circle"></i> Ukuran ringkas</li>
-                                <li><i class="fas fa-check-circle"></i> OS penuh (Linux)</li>
-                                <li><i class="fas fa-check-circle"></i> Komputasi tinggi</li>
-                                <li><i class="fas fa-check-circle"></i> Port lengkap</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
-                        <i class="fas fa-desktop" style="font-size:3rem;color:var(--accent);margin-bottom:8px;"></i>
-                        <h4>Contoh Populer</h4>
-                        <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:4px;">
-                            <span class="badge badge-pink" style="font-size:0.7rem;padding:4px 14px;">Raspberry Pi</span>
-                            <span class="badge badge-gold" style="font-size:0.7rem;padding:4px 14px;">Orange Pi</span>
-                            <span class="badge badge-green" style="font-size:0.7rem;padding:4px 14px;">NVIDIA Jetson</span>
-                        </div>
-                        <p style="color:var(--text-light);font-size:0.7rem;margin-top:6px;">
-                            <i class="fas fa-microchip"></i> Jetson khusus AI
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ============================================================
-            SLIDE 4 - PERBEDAAN
+            SLIDE 4 - SBC
             ============================================================ -->
             <div class="slide slide-4" data-index="4">
                 <span class="slide-number">04 / 09</span>
-                <span class="slide-tag">Perbandingan</span>
-                <h2 class="slide-title">SBC vs Mikrokontroler</h2>
-                <p class="slide-subtitle">Apa perbedaan mendasarnya?</p>
-                <div class="vs-compact">
-                    <div class="vs-side sbc">
-                        <h4><i class="fas fa-desktop" style="color:var(--primary);"></i> SBC</h4>
-                        <ul>
-                            <li><strong>Fungsi:</strong> Komputasi serbaguna</li>
-                            <li><strong>OS:</strong> Linux / Windows</li>
-                            <li><strong>Aplikasi:</strong> Server, AI, Media</li>
-                            <li><strong>Harga:</strong> Rp 500.000+</li>
-                        </ul>
+                <span class="slide-tag">KONSEP DASAR</span>
+                <h2 class="slide-title">APA ITU SBC?</h2>
+                <p class="slide-subtitle">SINGLE BOARD COMPUTER — KOMPUTER MINI</p>
+                <div class="grid-2">
+                    <div>
+                        <div class="card clickable-card" style="margin-bottom:10px;" data-detail="sbc-definisi">
+                            <p style="color:var(--text-light);font-size:0.9rem;line-height:1.6;">
+                                <strong style="color:#fff;">SBC</strong> ADALAH KOMPUTER LENGKAP
+                                DALAM SATU PAPAN SIRKUIT TUNGGAL.
+                            </p>
+                            <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK UNTUK PENJELASAN LENGKAP</div>
+                        </div>
+                        <div class="card clickable-card" data-detail="sbc-ciri">
+                            <h4 style="font-size:0.85rem;margin-bottom:4px;">
+                                <i class="fas fa-list-check" style="color:var(--accent);margin-right:6px;"></i> CIRI-CIRI
+                            </h4>
+                            <ul class="list-compact">
+                                <li><i class="fas fa-check-circle"></i> UKURAN RINGKAS</li>
+                                <li><i class="fas fa-check-circle"></i> OS PENUH (LINUX)</li>
+                                <li><i class="fas fa-check-circle"></i> KOMPUTASI TINGGI</li>
+                                <li><i class="fas fa-check-circle"></i> PORT LENGKAP</li>
+                            </ul>
+                            <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK UNTUK DETAIL</div>
+                        </div>
                     </div>
-                    <div class="vs-divider">VS</div>
-                    <div class="vs-side mcu">
-                        <h4><i class="fas fa-microchip" style="color:var(--accent);"></i> Mikrokontroler</h4>
-                        <ul>
-                            <li><strong>Fungsi:</strong> Kontrol spesifik</li>
-                            <li><strong>OS:</strong> Tanpa OS / RTOS</li>
-                            <li><strong>Aplikasi:</strong> Sensor, Otomasi</li>
-                            <li><strong>Harga:</strong> Rp 50.000 - 200.000</li>
-                        </ul>
+                    <div class="card clickable-card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;" data-detail="sbc-contoh">
+                        <i class="fas fa-desktop" style="font-size:3rem;color:var(--accent);margin-bottom:8px;"></i>
+                        <h4>CONTOH</h4>
+                        <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:4px;">
+                            <span class="badge badge-pink" style="font-size:0.7rem;padding:4px 14px;">RASPBERRY PI</span>
+                            <span class="badge badge-gold" style="font-size:0.7rem;padding:4px 14px;">ORANGE PI</span>
+                            <span class="badge badge-green" style="font-size:0.7rem;padding:4px 14px;">NVIDIA JETSON</span>
+                        </div>
+                        <p style="color:var(--text-light);font-size:0.7rem;margin-top:6px;">
+                            <i class="fas fa-microchip"></i> JETSON KHUSUS AI
+                        </p>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK UNTUK CONTOH NYATA</div>
                     </div>
-                </div>
-                <div class="vs-analogi">
-                    <span><i class="fas fa-brain"></i> SBC = Otak (komputer)</span>
-                    <span><i class="fas fa-bolt"></i> MCU = Sistem Saraf (kontrol)</span>
                 </div>
             </div>
 
             <!-- ============================================================
-            SLIDE 5 - ARSITEKTUR
+            SLIDE 5 - PERBEDAAN
             ============================================================ -->
             <div class="slide slide-5" data-index="5">
                 <span class="slide-number">05 / 09</span>
-                <span class="slide-tag">Arsitektur</span>
-                <h2 class="slide-title">Komponen Internal</h2>
-                <p class="slide-subtitle">Apa saja yang ada di dalamnya?</p>
-                <div class="grid-5">
-                    <div class="card" style="text-align:center;">
-                        <div class="icon"><i class="fas fa-microchip"></i></div>
-                        <h4>CPU</h4>
-                        <p>Otak</p>
+                <span class="slide-tag">PERBANDINGAN</span>
+                <h2 class="slide-title">SBC VS MIKROKONTROLER</h2>
+                <p class="slide-subtitle">APA PERBEDAAN MENDASARNYA?</p>
+                <div class="vs-compact">
+                    <div class="vs-side sbc clickable-card" data-detail="vs-sbc">
+                        <h4><i class="fas fa-desktop" style="color:var(--primary);"></i> SBC</h4>
+                        <ul>
+                            <li><strong>FUNGSI:</strong> KOMPUTASI SERBAGUNA</li>
+                            <li><strong>OS:</strong> LINUX / WINDOWS</li>
+                            <li><strong>APLIKASI:</strong> SERVER, AI, MEDIA</li>
+                            <li><strong>HARGA:</strong> RP 500.000+</li>
+                        </ul>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK DETAIL</div>
                     </div>
-                    <div class="card" style="text-align:center;">
-                        <div class="icon"><i class="fas fa-memory"></i></div>
-                        <h4>Memori</h4>
-                        <p>RAM/Flash</p>
+                    <div class="vs-divider">VS</div>
+                    <div class="vs-side mcu clickable-card" data-detail="vs-mcu">
+                        <h4><i class="fas fa-microchip" style="color:var(--accent);"></i> MIKROKONTROLER</h4>
+                        <ul>
+                            <li><strong>FUNGSI:</strong> KONTROL SPESIFIK</li>
+                            <li><strong>OS:</strong> TANPA OS / RTOS</li>
+                            <li><strong>APLIKASI:</strong> SENSOR, OTOMASI</li>
+                            <li><strong>HARGA:</strong> RP 50.000 - 200.000</li>
+                        </ul>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK DETAIL</div>
                     </div>
-                    <div class="card" style="text-align:center;">
-                        <div class="icon"><i class="fas fa-plug"></i></div>
-                        <h4>GPIO</h4>
-                        <p>I/O</p>
-                    </div>
-                    <div class="card" style="text-align:center;">
-                        <div class="icon"><i class="fas fa-wifi"></i></div>
-                        <h4>Komunikasi</h4>
-                        <p>UART/I2C/SPI</p>
-                    </div>
-                    <div class="card" style="text-align:center;">
-                        <div class="icon"><i class="fas fa-bluetooth-b"></i></div>
-                        <h4>Fitur</h4>
-                        <p>WiFi/BT/ADC</p>
-                    </div>
+                </div>
+                <div class="vs-analogi">
+                    <span class="clickable-card" data-detail="vs-otak"><i class="fas fa-brain"></i> SBC = OTAK (KOMPUTER)</span>
+                    <span class="clickable-card" data-detail="vs-saraf"><i class="fas fa-bolt"></i> MCU = SISTEM SARAF (KONTROL)</span>
                 </div>
             </div>
 
             <!-- ============================================================
-            SLIDE 6 - PEMROGRAMAN
+            SLIDE 6 - ARSITEKTUR
             ============================================================ -->
             <div class="slide slide-6" data-index="6">
                 <span class="slide-number">06 / 09</span>
-                <span class="slide-tag">Pemrograman</span>
-                <h2 class="slide-title">Ekosistem Pemrograman</h2>
-                <p class="slide-subtitle">Bahasa, IDE &amp; simulasi</p>
-                <div class="grid-3">
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-code"></i></div>
-                        <h4>Bahasa</h4>
-                        <ul class="list-compact">
-                            <li><i class="fas fa-check-circle" style="color:#4DB6AC;"></i> C / C++</li>
-                            <li><i class="fas fa-check-circle" style="color:#FFD54F;"></i> Python</li>
-                            <li><i class="fas fa-check-circle" style="color:#64B5F6;"></i> MicroPython</li>
-                        </ul>
+                <span class="slide-tag">ARSITEKTUR</span>
+                <h2 class="slide-title">KOMPONEN INTERNAL</h2>
+                <p class="slide-subtitle">KLIK SETIAP KOMPONEN UNTUK PENJELASAN &amp; CONTOH</p>
+                <div class="grid-5">
+                    <div class="card clickable-card" style="text-align:center;" data-detail="ars-cpu">
+                        <div class="icon"><i class="fas fa-microchip"></i></div>
+                        <h4>CPU</h4>
+                        <p>OTAK</p>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK</div>
                     </div>
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-laptop-code"></i></div>
-                        <h4>IDE</h4>
-                        <ul class="list-compact">
-                            <li><i class="fas fa-robot"></i> Arduino IDE</li>
-                            <li><i class="fas fa-code"></i> Thonny</li>
-                            <li><i class="fas fa-folder-open"></i> VS Code + PlatformIO</li>
-                        </ul>
+                    <div class="card clickable-card" style="text-align:center;" data-detail="ars-memori">
+                        <div class="icon"><i class="fas fa-memory"></i></div>
+                        <h4>MEMORI</h4>
+                        <p>RAM/FLASH</p>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK</div>
                     </div>
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-play"></i></div>
-                        <h4>Simulasi</h4>
-                        <ul class="list-compact">
-                            <li><i class="fas fa-robot"></i> Wokwi</li>
-                            <li><i class="fas fa-cubes"></i> Tinkercad</li>
-                            <li><i class="fas fa-microchip"></i> Proteus</li>
-                        </ul>
+                    <div class="card clickable-card" style="text-align:center;" data-detail="ars-gpio">
+                        <div class="icon"><i class="fas fa-plug"></i></div>
+                        <h4>GPIO</h4>
+                        <p>I/O</p>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK</div>
+                    </div>
+                    <div class="card clickable-card" style="text-align:center;" data-detail="ars-komunikasi">
+                        <div class="icon"><i class="fas fa-wifi"></i></div>
+                        <h4>KOMUNIKASI</h4>
+                        <p>UART/I2C/SPI</p>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK</div>
+                    </div>
+                    <div class="card clickable-card" style="text-align:center;" data-detail="ars-fitur">
+                        <div class="icon"><i class="fas fa-bluetooth-b"></i></div>
+                        <h4>FITUR</h4>
+                        <p>WIFI/BT/ADC</p>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK</div>
                     </div>
                 </div>
             </div>
 
             <!-- ============================================================
-            SLIDE 7 - PROYEK
+            SLIDE 7 - PEMROGRAMAN
             ============================================================ -->
             <div class="slide slide-7" data-index="7">
                 <span class="slide-number">07 / 09</span>
-                <span class="slide-tag">Proyek</span>
-                <h2 class="slide-title">Studi Kasus &amp; Proyek</h2>
-                <p class="slide-subtitle">Aplikasi nyata SBC &amp; Mikrokontroler</p>
-                <div class="grid-4">
-                    <div class="card proyek-card" style="text-align:center;">
-                        <div class="icon"><i class="fas fa-lightbulb"></i></div>
-                        <h4>LED Blink</h4>
-                        <p>Proyek dasar I/O</p>
-                        <span class="level level-beginner">Pemula</span>
+                <span class="slide-tag">PEMROGRAMAN</span>
+                <h2 class="slide-title">EKOSISTEM PEMROGRAMAN</h2>
+                <p class="slide-subtitle">KLIK SETIAP KARTU UNTUK DETAIL &amp; CONTOH</p>
+                <div class="grid-3">
+                    <div class="card clickable-card" data-detail="prog-bahasa">
+                        <div class="icon"><i class="fas fa-code"></i></div>
+                        <h4>BAHASA</h4>
+                        <ul class="list-compact">
+                            <li><i class="fas fa-check-circle" style="color:#4DB6AC;"></i> C / C++</li>
+                            <li><i class="fas fa-check-circle" style="color:#FFD54F;"></i> PYTHON</li>
+                            <li><i class="fas fa-check-circle" style="color:#64B5F6;"></i> MICROPYTHON</li>
+                        </ul>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK DETAIL</div>
                     </div>
-                    <div class="card proyek-card" style="text-align:center;">
-                        <div class="icon"><i class="fas fa-temperature-high"></i></div>
-                        <h4>Sensor + LCD</h4>
-                        <p>Baca &amp; tampilkan</p>
-                        <span class="level level-intermediate">Menengah</span>
+                    <div class="card clickable-card" data-detail="prog-ide">
+                        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>IDE</h4>
+                        <ul class="list-compact">
+                            <li><i class="fas fa-robot"></i> ARDUINO IDE</li>
+                            <li><i class="fas fa-code"></i> THONNY</li>
+                            <li><i class="fas fa-folder-open"></i> VS CODE + PLATFORMIO</li>
+                        </ul>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK DETAIL</div>
                     </div>
-                    <div class="card proyek-card" style="text-align:center;">
-                        <div class="icon"><i class="fas fa-plug"></i></div>
-                        <h4>Kontrol Relay</h4>
-                        <p>Otomasi listrik</p>
-                        <span class="level level-intermediate">Menengah</span>
-                    </div>
-                    <div class="card proyek-card" style="text-align:center;">
-                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                        <h4>IoT</h4>
-                        <p>ESP32 + ThingSpeak</p>
-                        <span class="level level-advanced">Lanjutan</span>
+                    <div class="card clickable-card" data-detail="prog-simulasi">
+                        <div class="icon"><i class="fas fa-play"></i></div>
+                        <h4>SIMULASI</h4>
+                        <ul class="list-compact">
+                            <li><i class="fas fa-robot"></i> WOKWI</li>
+                            <li><i class="fas fa-cubes"></i> TINKERCAD</li>
+                            <li><i class="fas fa-microchip"></i> PROTEUS</li>
+                        </ul>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK DETAIL</div>
                     </div>
                 </div>
             </div>
 
             <!-- ============================================================
-            SLIDE 8 - AKTIVITAS INTERAKTIF
+            SLIDE 8 - PROYEK
             ============================================================ -->
             <div class="slide slide-8" data-index="8">
                 <span class="slide-number">08 / 09</span>
-                <span class="slide-tag">Aktivitas</span>
-                <h2 class="slide-title">Aktivitas Interaktif</h2>
-                <p class="slide-subtitle">Uji pemahamanmu!</p>
-                <div class="aktivitas-grid">
-                    <!-- Kuis -->
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-question-circle"></i></div>
-                        <h4>Kuis Mini</h4>
-                        <button class="btn-small" onclick="startMiniQuiz()">Mulai</button>
-                        <div class="kuis-mini-area" id="miniKuisArea" style="display:none;">
-                            <div id="miniSoalContainer">
-                                <p id="miniSoalText" style="font-weight:500;font-size:0.8rem;margin-bottom:4px;"></p>
-                                <div class="pilihan-mini" id="miniPilihanContainer"></div>
-                                <button class="btn-small" onclick="miniNextSoal()" style="margin-top:4px;font-size:0.65rem;">Next</button>
-                            </div>
-                            <div id="miniHasilContainer" style="display:none;">
-                                <p id="miniHasilText" style="font-weight:600;font-size:0.8rem;"></p>
-                                <button class="btn-small" onclick="miniResetQuiz()" style="font-size:0.65rem;">Ulangi</button>
-                            </div>
-                        </div>
+                <span class="slide-tag">PROYEK</span>
+                <h2 class="slide-title">STUDI KASUS &amp; PROYEK</h2>
+                <p class="slide-subtitle">KLIK SETIAP PROYEK UNTUK LANGKAH &amp; CONTOH</p>
+                <div class="grid-4">
+                    <div class="card proyek-card clickable-card" style="text-align:center;" data-detail="proyek-led">
+                        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                        <h4>LED BLINK</h4>
+                        <p>PROYEK DASAR I/O</p>
+                        <span class="level level-beginner">PEMULA</span>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK DETAIL</div>
                     </div>
-                    <!-- Diskusi -->
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-users"></i></div>
-                        <h4>Diskusi</h4>
-                        <ul class="list-topic">
-                            <li><i class="fas fa-robot"></i> Robot pembersih lantai?</li>
-                            <li><i class="fas fa-home"></i> Rumah pintar?</li>
-                            <li><i class="fas fa-school"></i> Proyek di sekolah?</li>
-                        </ul>
+                    <div class="card proyek-card clickable-card" style="text-align:center;" data-detail="proyek-sensor">
+                        <div class="icon"><i class="fas fa-temperature-high"></i></div>
+                        <h4>SENSOR + LCD</h4>
+                        <p>BACA &amp; TAMPILKAN</p>
+                        <span class="level level-intermediate">MENENGAH</span>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK DETAIL</div>
                     </div>
-                    <!-- Refleksi -->
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-pen-fancy"></i></div>
-                        <h4>Refleksi</h4>
-                        <p style="font-size:0.75rem;">Hal paling menarik?</p>
-                        <textarea class="refleksi-area" rows="2" placeholder="Tulis di sini..."></textarea>
+                    <div class="card proyek-card clickable-card" style="text-align:center;" data-detail="proyek-relay">
+                        <div class="icon"><i class="fas fa-plug"></i></div>
+                        <h4>KONTROL RELAY</h4>
+                        <p>OTOMASI LISTRIK</p>
+                        <span class="level level-intermediate">MENENGAH</span>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK DETAIL</div>
+                    </div>
+                    <div class="card proyek-card clickable-card" style="text-align:center;" data-detail="proyek-iot">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <h4>IOT</h4>
+                        <p>ESP32 + THINGSPEAK</p>
+                        <span class="level level-advanced">LANJUTAN</span>
+                        <div class="click-hint"><i class="fas fa-hand-pointer"></i> KLIK DETAIL</div>
                     </div>
                 </div>
             </div>
 
             <!-- ============================================================
-            SLIDE 9 - PENUTUP
+            SLIDE 9 - PENUTUP (TERIMA KASIH)
             ============================================================ -->
             <div class="slide slide-9" data-index="9">
                 <span class="slide-number">09 / 09</span>
-                <span class="slide-tag" style="margin:0 auto 8px;">Penutup</span>
-                <h2 class="slide-title">Siap Jadi <span style="background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Inovator</span>?</h2>
-                <p class="slide-subtitle">Kamu sudah mengenal SBC &amp; Mikrokontroler. Saatnya berkarya!</p>
-                <div class="penutup-actions">
-                    <a href="#" class="btn-primary"><i class="fas fa-download"></i> Modul</a>
-                    <a href="#" class="btn-secondary"><i class="fas fa-book"></i> Sumber</a>
-                </div>
-                <div style="text-align:center;margin-top:16px;color:var(--text-light);font-size:0.75rem;opacity:0.5;">
-                    <i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:6px;"></i>
-                    Terima kasih telah belajar! 🌟
+                <div class="closing-wrapper">
+                    <div class="closing-icon">
+                        <div class="closing-ring"></div>
+                        <span class="closing-emoji">🎓</span>
+                    </div>
+                    <h1 class="closing-title">TERIMA KASIH</h1>
+                    <div class="closing-line"></div>
+                    <h2 class="closing-subtitle">SAMPAI JUMPA DI MINGGU DEPAN</h2>
+                    <p class="closing-message">
+                        TETAP SEMANGAT BELAJAR, JADILAH INOVATOR TEKNOLOGI MASA DEPAN! 🚀
+                    </p>
+                    <div class="closing-tags">
+                        <span><i class="fas fa-microchip"></i> SBC &amp; MIKROKONTROLER</span>
+                        <span><i class="fas fa-graduation-cap"></i> KELAS XII TECMATIK PLUS</span>
+                        <span><i class="fas fa-user-tie"></i> PAK FINUS MENA</span>
+                    </div>
+                    <div class="closing-stars">
+                        <i class="fas fa-star star-1"></i>
+                        <i class="fas fa-star star-2"></i>
+                        <i class="fas fa-star star-3"></i>
+                    </div>
                 </div>
             </div>
 
         </div><!-- end slide-wrapper -->
     </div><!-- end slide-container -->
 
-    <!-- ========== NAVIGASI PANAH KIRI & KANAN ========== -->
+    <!-- ========== NAVIGASI PANAH ========== -->
     <button class="nav-arrow prev" id="prevBtn" disabled>
         <i class="fas fa-chevron-left"></i>
     </button>
@@ -385,9 +433,9 @@
         <i class="fas fa-chevron-right"></i>
     </button>
 
-    <!-- ========== TOMBOL HOME - DI TENGAH BAWAH ========== -->
+    <!-- ========== TOMBOL HOME ========== -->
     <button class="home-btn" id="homeBtn">
-        <i class="fas fa-home"></i> Home
+        <i class="fas fa-home"></i> HOME
     </button>
 
     <!-- ========== SLIDE INDICATOR ========== -->
