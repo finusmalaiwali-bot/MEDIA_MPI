@@ -1,7 +1,7 @@
 // ============================================
 // DATA SLIDE
 // ============================================
-var totalSlides = 9;
+var totalSlides = 8;
 var currentSlide = 0;
 var isTransitioning = false;
 
